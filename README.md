@@ -9,20 +9,21 @@ dependency
 
 Add it in your root build.gradle at the end of repositories:
 
-	allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
-
+```java
+allprojects {
+    repositories {
+	...
+	maven { url 'https://jitpack.io' }
+    }
+}
+```
 
 Add the dependency:
 
-'''java
+```java
 dependencies {
 	   compile 'com.github.StevenDXC:DxWaveRefresh:1.0'
 }
-''' 
+```
   
   
