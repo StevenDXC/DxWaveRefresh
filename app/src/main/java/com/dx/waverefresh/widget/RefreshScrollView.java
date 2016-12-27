@@ -89,9 +89,9 @@ public class RefreshScrollView extends ScrollView{
 
             if(diff >= getHeight()/5.0f){
                 mContentLayout.startLoadingAnimation();
+                playScaleAnimation();
                 if(mOnStartRefreshingListener != null){
                     mOnStartRefreshingListener.startRefreshing();
-                    playScaleAnimation();
                 }
             }else if(diff > touchSlop){
                 mContentLayout.restoreBackground();

@@ -14,6 +14,8 @@
             android:orientation="vertical"
             app:wr_topImageHeight="@dimen/defaultTopImageHeight"
             app:wr_waveAmplitude="10dp"
+            app:wr_angle="10"
+            app:wr_bgColor="@color/colorWhite"
             app:wr_speed="6"
             app:wr_gravity="right">
 

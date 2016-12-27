@@ -63,7 +63,7 @@ public class WaveRefreshLayout extends LinearLayout{
 
     /**
      * set the shape background margin and shape. and change the top padding of this view when user dragging
-     * @param progress
+     * @param progress pulling down progress(current touch move distance / start refresh move distance)
      */
     public void setBackgroundOffset(float progress){
         background.setTopMargin(progress);
