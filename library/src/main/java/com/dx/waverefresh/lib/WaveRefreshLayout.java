@@ -44,7 +44,8 @@ public class WaveRefreshLayout extends LinearLayout{
            background.topMargin = topImageHeight = ta.getDimensionPixelSize(R.styleable.WaveRefreshLayout_wr_topImageHeight,getResources().getDimensionPixelOffset(R.dimen.defaultTopImageHeight));
            background.angle = ta.getInt(R.styleable.WaveRefreshLayout_wr_angle,10);
            background.gravity = ta.getInt(R.styleable.WaveRefreshLayout_wr_gravity,1);
-           background.waveAmplitude = ta.getDimensionPixelSize(R.styleable.WaveRefreshLayout_wr_waveHeight,40);
+           background.waveAmplitude = ta.getDimensionPixelSize(R.styleable.WaveRefreshLayout_wr_waveAmplitude,30);
+           background.speed = ta.getInt(R.styleable.WaveRefreshLayout_wr_speed,6);
            ta.recycle();
 
        }else{
@@ -52,7 +53,8 @@ public class WaveRefreshLayout extends LinearLayout{
            background.topMargin = topImageHeight = getResources().getDimensionPixelOffset(R.dimen.defaultTopImageHeight);
            background.angle = 10;
            background.gravity = 1;
-           background.waveAmplitude = 40;
+           background.waveAmplitude = 30;
+           background.speed = 6;
        }
         mPaddingTop = (int)topImageHeight;
         setPadding(getPaddingLeft(),(int)topImageHeight,getPaddingRight(),getPaddingBottom());

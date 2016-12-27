@@ -43,6 +43,11 @@ class ShapeBackgroundDrawable extends Drawable implements Animatable{
      */
     public int gravity;
 
+    /**
+     * wave bitmap translate speed
+     */
+    public int speed;
+
 
     private Paint mPaint;
     private Path mPath;
@@ -157,7 +162,7 @@ class ShapeBackgroundDrawable extends Drawable implements Animatable{
             canvas.drawRect(0,mWaveTop+waveAmplitude*2,rect.right,rect.bottom,mPaint);
             mMatrix.setTranslate(tx,mWaveTop+ty);
             canvas.drawBitmap(mWaveBitmap,mMatrix,mPaint);
-            tx -= 10;
+            tx -= speed;
             if(tx <= -rect.right){
                 tx += rect.right;
             }

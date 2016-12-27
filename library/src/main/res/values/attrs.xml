@@ -9,7 +9,8 @@
             <enum name="left" value="0" />
             <enum name="right" value="1" />
         </attr>
-        <attr name="wr_waveHeight" format="dimension" />
+        <attr name="wr_waveAmplitude" format="dimension" />
         <attr name="wr_topImage" format="reference" />
+        <attr name="wr_speed" format="integer" />
     </declare-styleable>
 </resources>

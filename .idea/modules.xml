@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DxWaveRefresh.iml" filepath="$PROJECT_DIR$/DxWaveRefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DxWaveRefreshView.iml" filepath="$PROJECT_DIR$/DxWaveRefreshView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
     </modules>
